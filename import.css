@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Oswald:wght@200..700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    background-color: rgb(17, 12, 15);
+    color: aquamarine;
+    height: 27px;
+    display: flex;
+    font-size: 20px;
+    margin: 2px;
+    padding: 0px 9px;
+    border-radius: 7px;
+    font-family: "Martian Mono", monospace;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.gamecontainer {
+
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: "Martian Mono", monospace;
+}
+
+.container div {
+    cursor: pointer;
+    border: 2px solid rgb(25, 25, 28);
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(231, 135, 231);
+}
+
+.gameinfo {
+    padding: 0 34px;
+    font-family: "Oswald", sans-serif;
+}
+
+.info {
+    font-family: "Martian Mono", monospace;
+    font-size: 20px;
+}
+
+.gameinfo.h1 {
+    font-weight: normal;
+
+}
+
+.image img {
+    width: 0;
+    transition: width 1s ease-in-out;
+
+}
+
+.jangid img {
+    width: 0px;
+    transition: width 0.8s ease-in-out;
+}
+
+#reset {
+    margin: 8px;
+    padding: 4px 17px;
+    border-radius: 8px;
+    background: #f495f4;
+    cursor: pointer;
+    font-family: "Martian Mono", monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bharat {
+    font-family: "Martian Mono", monospace;
+    font-weight: bold;
+    font-size: 25px
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.053);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  color: purple;
+  display : flex;
+  
+  margin: auto;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  font-size:30px;
+  width: 100%;
+}
+.nowin {
+    font-family: "Martian Mono", monospace;
+    font-weight: bold;
+    font-size: 25px ;
+}
+
+@media screen and (max-width: 800px) {
+    .gamecontainer {
+        flex-wrap: wrap;
+
+    }
+
+    .gameinfo {
+        margin-top: 34px;
+    }
+
+    .gameinfo.h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+
+    }
+}
